@@ -51,7 +51,7 @@ func GenerateCertificate(service, namespace string) ([]byte, []byte, error) {
 		IsCA:               false,
 		SignatureAlgorithm: x509.SHA256WithRSA,
 		NotBefore:          time.Now(),
-		NotAfter:           time.Now().Add(time.Hour * 24 * 365),
+		NotAfter:           time.Now().Add(time.Hour * 24 * 3650),
 		KeyUsage:           x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature,
 		ExtKeyUsage:        []x509.ExtKeyUsage{x509.ExtKeyUsageServerAuth},
 		DNSNames: []string{
