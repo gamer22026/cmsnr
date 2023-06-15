@@ -1,11 +1,14 @@
 before:
   hooks:
   - go mod tidy
+
+env:
+  - IMAGE_TAG={{.Tag}}
   
 project_name: cmsnrctl
 
 builds:
-  - ldflags: "-extldflags= -w -X 'github.com/hooksie1/cmsnr/cmd.Version={{.Tag}}-{{.ShortCommit}}'"
+  - ldflags: "-extldflags= -w -X 'github.com/hooksie1/cmsnr/cmd.Version={{.Tag}}'"
     env:
       - "CGO_ENABLED=0"
       - "GO111MODULE=on"
