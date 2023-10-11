@@ -27,9 +27,9 @@ func getContainers(namespace, depName, registry string) []corev1.Container {
 	return []corev1.Container{
 		{
 			Name:            "opa",
-			Image:           "openpolicyagent/opa:latest-static",
+			Image:           fmt.Sprintf("%s/opa:latest-static", registry),
 			ImagePullPolicy: corev1.PullPolicy("IfNotPresent"),
-			Args:            []string{"run", "--server"},
+			Args:            []string{"run", "--server --config-file /tmp/opa/conf"},
 		},
 		{
 			Name:            "cmsnr-client",

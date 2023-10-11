@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hooksie1/cmsnr/api/v1alpha1"
-	"github.com/hooksie1/cmsnr/pkg/client"
+	"github.com/gamer22026/cmsnr/api/v1alpha1"
+	"github.com/gamer22026/cmsnr/pkg/client"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
