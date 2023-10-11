@@ -1,5 +1,5 @@
 PROJECT_NAME := "cmsnr"
-PKG := "github.com/hooksie1/$(PROJECT_NAME)"
+PKG := "github.com/gamer22026/$(PROJECT_NAME)"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
 GO_FILES := $(shell find . -name '*.go' | grep -v /vendor/ | grep -v _test.go)
 VERSION := $$(git describe --tags | cut -d '-' -f 1)

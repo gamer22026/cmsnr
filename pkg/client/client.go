@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/hooksie1/cmsnr/api/v1alpha1"
+	"github.com/gamer22026/cmsnr/api/v1alpha1"
 	"k8s.io/client-go/rest"
 )
 

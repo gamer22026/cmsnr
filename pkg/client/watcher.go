@@ -3,7 +3,7 @@ package client
 import (
 	"time"
 
-	"github.com/hooksie1/cmsnr/api/v1alpha1"
+	"github.com/gamer22026/cmsnr/api/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"

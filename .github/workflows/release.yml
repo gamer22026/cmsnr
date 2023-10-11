@@ -38,7 +38,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            hooksie1/cmsnr:dev
+            gamer2202gamer22026/cmsnr:dev
   release:
     permissions:
       id-token: write
@@ -84,6 +84,6 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            hooksie1/cmsnr:latest
-            hooksie1/cmsnr:${{ github.ref_name }}
+            gamer22026/cmsnr:latest
+            gamer22026/cmsnr:${{ github.ref_name }}
 
