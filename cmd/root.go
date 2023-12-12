@@ -36,7 +36,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.cmsnr.yaml)")
 	rootCmd.PersistentFlags().StringVarP(&v, "verbosity", "v", logrus.InfoLevel.String(), "Logging level")
 	rootCmd.PersistentFlags().StringVarP(&namespace, "namespace", "n", "default", "The namespace to use")
-	rootCmd.PersistentFlags().StringP("registry", "r", "hooksie1", "Container registry")
+	rootCmd.PersistentFlags().StringP("registry", "r", "dockerhub.marketstudies.com", "Container registry")
 	viper.BindPFlag("registry", rootCmd.PersistentFlags().Lookup("registry"))
 
 	rootCmd.PersistentPreRunE = func(cmd *cobra.Command, args []string) error {

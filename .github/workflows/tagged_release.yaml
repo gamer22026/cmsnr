@@ -38,5 +38,5 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            hooksie1/cmsnr:latest
-            hooksie1/cmsnr:${{ github.ref_name }}
+            gamer22026/cmsnr:latest
+            gamer22026/cmsnr:${{ github.ref_name }}

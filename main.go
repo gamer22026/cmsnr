@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/hooksie1/cmsnr/cmd"
+	"github.com/gamer22026/cmsnr/cmd"
 )
 
 func main() {

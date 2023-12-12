@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hooksie1/cmsnr/pkg/deployment"
+	"github.com/gamer22026/cmsnr/pkg/deployment"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
